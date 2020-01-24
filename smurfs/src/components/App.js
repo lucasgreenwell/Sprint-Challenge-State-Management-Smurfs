@@ -5,6 +5,7 @@ import axios from 'axios';
 import SmurfContext from '../contexts/contexts';
 
 import SmurfsPlural from './SmurfsPlural';
+import SmurfForm from './SmurfForm'
 
 const App = ()=>{
 
@@ -25,6 +26,7 @@ const App = ()=>{
       <SmurfContext.Provider value={[smurfs, setSmurfs]}>
         <div className="App">
           <SmurfsPlural/>
+          <SmurfForm/>
         </div>
       </SmurfContext.Provider>
     );
